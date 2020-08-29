@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{   //Member variables have/has a/an...
-    //Properties
-    //Constructor(s) create mold for...
-    //Methods do something.
-    public class MarketingFirm
+{
+    interface ISweepstakesManager
     {
+        void InsertSweepstakes(Sweepstakes sweepstakes);
+        Sweepstakes GetSweepstakes();
     }
 }
