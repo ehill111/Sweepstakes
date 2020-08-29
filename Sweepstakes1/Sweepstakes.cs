@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{
-    class Program
+{   //Member variables have/has a/an...
+    //Properties
+    //Constructor(s) create mold for...
+    //Methods do something.
+    class Sweepstakes
     {
-        private static void Main(string[] args)
-        {
-        }
     }
 }
