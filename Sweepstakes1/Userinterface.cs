@@ -10,22 +10,29 @@ namespace Sweepstakes1
     //Think output instead of objects performing actions.
     public class Userinterface
     {   //Member variables have/has a/an...
-        
+        string contestantFName;
+        string contestantLName;
+        string contestantEMail;
+        string nameOfSweepstakes;
+        int registrationNumber;
 
         //Methods do something.
-        public static void RequestContestantContactData(string firstName, string lastName, string email, int registrationNumber)
+        public static void RequestContestantContactData(string contestantFirstName, string contestantLastName, string contestantEmail, string sweepstakesName, int contestantRegistrationNumber)
         {
             Console.WriteLine("Please enter your first name and press Enter.");
-            string fName = Console.ReadLine();
-
+            string contestantFName = Console.ReadLine();
+            
             Console.WriteLine("Please enter your last name and press Enter.");
-            string lName = Console.ReadLine();
+            string contestantLName = Console.ReadLine();
 
             Console.WriteLine("Please enter your email address and press Enter.");
-            string Email = Console.ReadLine();
+            string contestantEMail = Console.ReadLine();
+
+            Console.WriteLine("Please enter the name of the sweepstakes you are entering and press Enter.");
+            string nameOfSweepstakes = Console.ReadLine();
 
             Console.WriteLine("Please enter your sweepstakes registration number and press Enter.");
-            int registNumber = int.Parse(Console.ReadLine());
+            int registrationNumber = int.Parse(Console.ReadLine());
         }
 
 
