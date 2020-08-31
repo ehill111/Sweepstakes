@@ -11,5 +11,28 @@ namespace Sweepstakes1
     //Methods do something.
     class SweepstakesStackManager
     {
+        //Member variables have/has a/an...
+        private Stack<Sweepstakes> stack;
+
+        //Constructor makes mold.
+
+        //Methods do something.
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+
+        }
+
+        public void GetSweepstakes()
+        {
+
+        }
+
+
+
+
+
+
+
+
     }
 }

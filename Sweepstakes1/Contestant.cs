@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes1
 {     
-    class Contestant
+    public class Contestant
     {
         //Member variables have/has a/an...
         public string FirstName;
@@ -14,17 +14,9 @@ namespace Sweepstakes1
         public string EmailAddress;
         public int RegistrationNumber;
 
-
-
-        //Properties
-
-
+  
         //Constructor(s) create mold for...
-
-
-
-
-
+        
 
         //Methods do something.
 

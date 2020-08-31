@@ -10,10 +10,7 @@ namespace Sweepstakes1
     //Think output instead of objects performing actions.
     public static class Userinterface
     {   //Member variables have/has a/an...
-       public static string GetUserinputFor(string firstname, string lastName, string emailAddress, string registrationNumber);
-        {
-            
-        }
+
 
         //Properties manipulate access to fields.
 
@@ -22,5 +19,10 @@ namespace Sweepstakes1
 
 
         //Methods do something.
+        public static string GetUserinfoFor()
+        {
+
+        }
+
     }
 }

@@ -5,11 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{   //Member variables have/has a/an...
-    //Properties
-    //Constructor(s) create mold for...
-    //Methods do something.
+{   
     class Sweepstakes
-    {
+    {   //Member variables have/has a/an...
+        private Dictionary<int, Contestant> contestants;
+        private string name;
+        public string Name;
+
+        //Properties
+
+        //Constructor
+        public Sweepstakes(string name)
+        {
+
+        }
+        //Methods do something.
+        public void RegisterContestant(Contestant contest)
+        {
+
+        }
+        public void PickWinner()
+        {
+
+        } 
+
+        public void PrintContestantInfo(Contestant contestant)
+        {
+
+        }
+
+
     }
 }

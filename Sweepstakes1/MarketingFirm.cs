@@ -5,11 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{   //Member variables have/has a/an...
-    //Properties
-    //Constructor(s) create mold for...
-    //Methods do something.
+{
     public class MarketingFirm
-    {
+    {    //Member variables have/has a/an...
+        private ISweepStakesManager _manager;
+
+        //Constructor(s) create mold for..
+        public MarketingFirm(ISweepstakesManager manager)
+            {
+
+            }        
+           
+        //Methods do something.
+        public void CreateSweepstakes()
+        {
+
+        }
+
     }
+
 }
+   
+
+    
+   
+
