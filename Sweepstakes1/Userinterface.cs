@@ -6,23 +6,33 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes1
 {   //Static can't instantiate.
-    //May only have input parameters...no get or setof fields of an instance.
+    //May only have input parameters...no get or set of fields of an instance.
     //Think output instead of objects performing actions.
-    public static class Userinterface
+    public class Userinterface
     {   //Member variables have/has a/an...
-
-
-        //Properties manipulate access to fields.
-
-
-        //Constructors make hard mold for instances.
-
+        
 
         //Methods do something.
-        public static string GetUserinfoFor()
+        public static void RequestContestantContactData(string firstName, string lastName, string email, int registrationNumber)
         {
+            Console.WriteLine("Please enter your first name and press Enter.");
+            string fName = Console.ReadLine();
 
+            Console.WriteLine("Please enter your last name and press Enter.");
+            string lName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your email address and press Enter.");
+            string Email = Console.ReadLine();
+
+            Console.WriteLine("Please enter your sweepstakes registration number and press Enter.");
+            int registNumber = int.Parse(Console.ReadLine());
         }
+
+
+
+
+
+
 
     }
 }
