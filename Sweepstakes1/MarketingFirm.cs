@@ -8,13 +8,13 @@ namespace Sweepstakes1
 {
     public class MarketingFirm
     {    //Member variables have/has a/an...
-        //private ISweepStakesManager _manager;
+        private ISweepstakesManager _manager;
 
         //Constructor(s) create mold for..
-        //public MarketingFirm(ISweepstakesManager manager)
-        //    {
-
-        //    }        
+        MarketingFirm(ISweepstakesManager manager)
+            {
+            this._manager = manager;
+            }        
            
         //Methods do something.
         public void CreateSweepstakes()
