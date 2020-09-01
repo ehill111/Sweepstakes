@@ -31,7 +31,7 @@ namespace Sweepstakes1
             Console.WriteLine("Names of sweepstakes we manage: ");
             foreach (string name in sweepstakeName)
             {
-                 
+                Console.WriteLine(name); 
             }
 
 
@@ -39,7 +39,7 @@ namespace Sweepstakes1
 
         public void GetSweepstakes()
         {
-
+            //Am I supposed to do a pop?
         }
 
 

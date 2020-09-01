@@ -5,11 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{   //Member variables have/has a/an...
-    //Properties
-    //Constructor(s) create mold for...
-    //Methods do something.
+{       
+    
     class SweepstakesQueueManager
-    {
+    {   //Member variables have/has a/an...
+        private Queue<Sweepstakes> queue;
+
+        //Methods do something.
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+            Queue<string> Sweepstake = new Queue<string>();
+
+            Sweepstake.Enqueue("Diamond");
+            Sweepstake.Enqueue("Ruby");
+            Sweepstake.Enqueue("Emerald");
+            Sweepstake.Enqueue("Gold");
+            Sweepstake.Enqueue("Silver");
+
+            Console.WriteLine("Sweepstakes in queue: ");
+            foreach (string name in Sweepstake)
+            {
+
+            }
+        }
+
+        public void GetSweepstakes()
+        {
+
+        }
+
+
     }
 }
