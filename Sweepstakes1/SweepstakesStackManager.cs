@@ -9,37 +9,56 @@ namespace Sweepstakes1
     //Properties
     //Constructor(s) create mold for...
     //Methods do something.
-    class SweepstakesStackManager
+    class SweepstakesStackManager : ISweepstakesManager 
     {
         //Member variables have/has a/an...
         private Stack<Sweepstakes> stack;
-        
+
 
         //Constructor makes mold.
-
+        public SweepstakesStackManager()
+        {
+            stack = new Stack<Sweepstakes>();
+        }
         //Methods do something.
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {//LIFO
-            Stack<string> sweepstakeName = new Stack<string>();
+            stack.Push(sweepstakes);
+
+
+            //Stack<string> sweepstakeName = new Stack<string>();
             
-            sweepstakeName.Push("Diamond");
-            sweepstakeName.Push("Emerald");
-            sweepstakeName.Push("Ruby");
-            sweepstakeName.Push("Gold");
-            sweepstakeName.Push("Silver");
+            //sweepstakeName.Push("Diamond");
+            //sweepstakeName.Push("Emerald");
+            //sweepstakeName.Push("Ruby");
+            //sweepstakeName.Push("Gold");
+            //sweepstakeName.Push("Silver");
 
-            Console.WriteLine("Names of sweepstakes we manage: ");
-            foreach (string name in sweepstakeName)
-            {
-                Console.WriteLine(name); 
-            }
-
+            //Console.WriteLine("Names of sweepstakes we manage: ");
+            //foreach (string name in sweepstakeName)
+            //{
+            //    Console.WriteLine(name); 
+            //}
 
         }
 
-        public void GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
-            //Am I supposed to do a pop?
+            return stack.Pop();
+            //Stack<string> sweepstakeName = new Stack<string>();
+
+            //sweepstakeName.Push("Diamond");
+            //sweepstakeName.Push("Emerald");
+            //sweepstakeName.Push("Ruby");
+            //sweepstakeName.Push("Gold");
+            //sweepstakeName.Push("Silver");
+
+            
+            //Console.WriteLine(sweepstakeName.);
+           
+            //{
+            //    Console.WriteLine(name);
+            //}
         }
 
 

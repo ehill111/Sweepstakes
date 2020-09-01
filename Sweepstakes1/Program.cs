@@ -10,7 +10,12 @@ namespace Sweepstakes1
     {
         private static void Main(string[] args)
         {
-            
+            Userinterface.RequestContestantContactData();
+            Contestant bob = new Contestant();
+            bob.FirstName = Userinterface.GetUserInfo("Please enter your first name");
+            bob.LastName = Userinterface.GetUserInfo("Please enter the last name");
+
+
 
             Console.WriteLine("Hello world!");
             Console.ReadLine();

@@ -16,21 +16,21 @@ namespace Sweepstakes1
         //Constructor
         public Sweepstakes(string name)
         {
-            Dictionary<int, Contestant> contestant = new Dictionary<int, Contestant>(); 
+            contestants = new Dictionary<int, Contestant>(); 
         }
         //Methods do something.
         public void RegisterContestant(Contestant contest)
         {
             //Add registrant to contestant list.
-            Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
-            contestants.Add(Userinterface.RequestContestantContactData);//need help
+            //Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
+            contestants.Add(contest.RegistrationNumber, contest);//need help
         }
         public void PickWinner()
         {
-                    
-            Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
-            contestants.Add(053221, "Eric");
-            contestants.Add(934096, "Sonny");
+            Contestant flamingo = new Contestant("Eric");
+            //Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
+            contestants.Add(053221, flamingo);
+            contestants.Add(934096, new Contestant("Sonny"));
             contestants.Add(883940, "Alexis");
 
             Console.WriteLine("Enter the winning ticket number: ");
@@ -45,7 +45,11 @@ namespace Sweepstakes1
         public void PrintContestantInfo(Contestant contestant)
         {
             //Get ContestantInfo from database.
-            Console.WriteLine("");
+            Console.WriteLine(contestant.FirstName);
+            Console.WriteLine(contestant.LastName);
+            Console.WriteLine(contestant.EmailAddress);
+            Console.WriteLine(contestant.RegistrationNumber);
+
         }
 
 

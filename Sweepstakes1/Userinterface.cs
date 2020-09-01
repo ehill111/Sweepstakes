@@ -10,17 +10,17 @@ namespace Sweepstakes1
     //Think output instead of objects performing actions.
     public class Userinterface
     {   //Member variables have/has a/an...
-        string contestantFName;
-        string contestantLName;
-        string contestantEMail;
-        string nameOfSweepstakes;
-        int registrationNumber;
+        //string contestantFName;
+        //string contestantLName;
+        //string contestantEMail;
+        //string nameOfSweepstakes;
+        //int registrationNumber;
 
         //Methods do something.
-        public static void RequestContestantContactData(string contestantFirstName, string contestantLastName, string contestantEmail, string sweepstakesName, int contestantRegistrationNumber)
+        public static void RequestContestantContactData()
         {
             Console.WriteLine("Please enter your first name and press Enter.");
-            string contestantFName = Console.ReadLine();
+            string contestantFirstName = Console.ReadLine();
             
             Console.WriteLine("Please enter your last name and press Enter.");
             string contestantLName = Console.ReadLine();
@@ -28,11 +28,15 @@ namespace Sweepstakes1
             Console.WriteLine("Please enter your email address and press Enter.");
             string contestantEMail = Console.ReadLine();
 
-            Console.WriteLine("Please enter the name of the sweepstakes you are entering and press Enter.");
-            string nameOfSweepstakes = Console.ReadLine();
+            //Console.WriteLine("Please enter your sweepstakes registration number and press Enter.");
+            //int registrationNumber = int.Parse(Console.ReadLine());
+        }
 
-            Console.WriteLine("Please enter your sweepstakes registration number and press Enter.");
-            int registrationNumber = int.Parse(Console.ReadLine());
+        public static string GetUserInfo(string output)
+        {
+            Console.WriteLine(output);
+            string input = Console.ReadLine();
+            return input;
         }
 
 

@@ -14,12 +14,15 @@ namespace Sweepstakes1
         public string EmailAddress;
         public int RegistrationNumber;
 
-  
+
         //Constructor(s) create mold for...
-        
+        public Contestant(string name)
+        {
+            this.FirstName = name;
+        }
 
         //Methods do something.
-        public 
+        
 
 
 
