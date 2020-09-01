@@ -11,12 +11,7 @@ namespace Sweepstakes1
         private Dictionary<int, Contestant> contestants;
         private string name;
         public string Name;
-        
-        //int companySelection;
-        //int contestantSelection;
         int winningTicket;
-
-        //Properties
 
         //Constructor
         public Sweepstakes(string name)
@@ -32,30 +27,7 @@ namespace Sweepstakes1
         }
         public void PickWinner()
         {
-            //int companySelection = 053221;
-            //if(contestantSelection == companySelection)
-            //{
-            //    Console.WriteLine("Congratulations! You win one million dollars!");
-            //}
-            //else if(contestantSelection != companySelection)
-            //{
-            //    Console.WriteLine("Oh, shucks! Your number didn't win this time.");
-            //}
-
-            //switch (053221)
-            //{
-            //    case 094420:
-            //        break;
-            //    case 883099:
-            //        break;
-            //    case 053221:
-            //        Console.WriteLine("Congratulation!" + 053221 + "is the winning ticket! You win one million dollars!");
-            //        break;
-            //    case 222209:
-            //        break;
-            //    case 737389:
-            //}
-           
+                    
             Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
             contestants.Add(053221, "Eric");
             contestants.Add(934096, "Sonny");
@@ -68,7 +40,6 @@ namespace Sweepstakes1
                 if (contestant.Key  == winningTicket)
                 Console.WriteLine({contestant.Value} " has the winning ticket!");
             }
-
 
         } 
         public void PrintContestantInfo(Contestant contestant)
