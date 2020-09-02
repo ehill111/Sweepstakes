@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,10 @@ namespace Sweepstakes1
         private ISweepstakesManager _manager;
 
         //Constructor(s) create mold for..
+        //Dependency injection used by giving MarketingFirm inheritance of interface ISweeptakesManager.
+        //This allows MarketingFirm class to use either SweepstakesStackManager class or SweepstakesQueueManager class.
+        //This is because both classes also inherit from ISweepstakesManager.
+        //The use of dependency injection here also decouples MarketingFirm from other classes. Thus making the program easier to maintain.
         MarketingFirm(ISweepstakesManager manager)
             {
             this._manager = manager;

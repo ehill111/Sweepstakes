@@ -14,19 +14,19 @@ namespace Sweepstakes1
         //Methods do something.
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            //Queue<string> Sweepstake = new Queue<string>();
+            Queue<string> Sweepstake = new Queue<string>();
 
-            //Sweepstake.Enqueue("Diamond");
-            //Sweepstake.Enqueue("Ruby");
-            //Sweepstake.Enqueue("Emerald");
-            //Sweepstake.Enqueue("Gold");
-            //Sweepstake.Enqueue("Silver");
+            Sweepstake.Enqueue("Diamond");
+            Sweepstake.Enqueue("Ruby");
+            Sweepstake.Enqueue("Emerald");
+            Sweepstake.Enqueue("Gold");
+            Sweepstake.Enqueue("Silver");
 
-            //Console.WriteLine("Sweepstakes in queue: ");
-            //foreach (string name in Sweepstake)
-            //{
-            //    Console.WriteLine(Sweepstake);
-            //}
+            Console.WriteLine("Sweepstakes in queue: ");
+            foreach (string name in Sweepstake)
+            {
+                Console.WriteLine(Sweepstake);
+            }
         }
 
         public Sweepstakes GetSweepstakes()

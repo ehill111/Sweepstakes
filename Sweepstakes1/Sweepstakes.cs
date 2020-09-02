@@ -27,18 +27,17 @@ namespace Sweepstakes1
         }
         public void PickWinner()
         {
-            Contestant flamingo = new Contestant("Eric");
             //Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
-            contestants.Add(053221, flamingo);
+            contestants.Add(053221, new Contestant("Eric"));
             contestants.Add(934096, new Contestant("Sonny"));
-            contestants.Add(883940, "Alexis");
+            contestants.Add(883940, new Contestant("Alexis"));
 
             Console.WriteLine("Enter the winning ticket number: ");
             int winningTicket = int.Parse(Console.ReadLine());
-            foreach (KeyValuePair<int, string> contestant in contestants)
+            //foreach (KeyValuePair<int, string> contestant in contestants)
             {
-                if (contestant.Key  == winningTicket)
-                Console.WriteLine({contestant.Value} " has the winning ticket!");
+                //if (contestant.Key  == winningTicket)
+                //Console.WriteLine(contestant.Value + " has the winning ticket!");
             }
 
         } 
