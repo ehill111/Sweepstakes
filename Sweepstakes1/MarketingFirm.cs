@@ -20,12 +20,11 @@ namespace Sweepstakes1
             {
             this._manager = manager;
             }        
-           
-        //Methods do something.
+            //Methods do something.
         public void CreateSweepstakes()
         {
-            Sweepstakes newSweepstake = new Sweepstakes("Big summer blowout");
-            Contestant contestant = new Contestant("Bob");
+            Sweepstakes newSweepstake = new Sweepstakes("Diamond");
+            Contestant contestant = new Contestant("Eric");
             contestant.FirstName = Userinterface.GetUserInfo("Enter the first name");
             contestant.LastName = Userinterface.GetUserInfo("Enter the last name");
             contestant.EmailAddress = Userinterface.GetUserInfo("Enter your email");

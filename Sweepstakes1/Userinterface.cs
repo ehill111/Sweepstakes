@@ -10,12 +10,7 @@ namespace Sweepstakes1
     //Think output instead of objects performing actions.
     public class Userinterface
     {   //Member variables have/has a/an...
-        //string contestantFName;
-        //string contestantLName;
-        //string contestantEMail;
-        //string nameOfSweepstakes;
-        //int registrationNumber;
-
+       
         //Methods do something.
         public static void RequestContestantContactData()
         {
@@ -27,23 +22,19 @@ namespace Sweepstakes1
 
             Console.WriteLine("Please enter your email address and press Enter.");
             string contestantEMail = Console.ReadLine();
-
-            //Console.WriteLine("Please enter your sweepstakes registration number and press Enter.");
-            //int registrationNumber = int.Parse(Console.ReadLine());
         }
-
         public static string GetUserInfo(string output)
         {
             Console.WriteLine(output);
             string input = Console.ReadLine();
             return input;
         }
-
-        public static int ChooseSweepstakesManager()
+        public static string ChooseSweepstakesManager()
         {
             Console.WriteLine("Please select the sweepstakes manager you would like to use. Your choices are (1) SweepstakesStackManager or (2) SweepstakesQueueManager. Type (1) or (2) and press Enter.");
-            int input = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
             return input;
+            
         }
 
 

@@ -28,13 +28,9 @@ namespace Sweepstakes1
                 Console.WriteLine(Sweepstake);
             }
         }
-
         public Sweepstakes GetSweepstakes()
         {
             return queue.Dequeue();
-           
         }
-
-
     }
 }

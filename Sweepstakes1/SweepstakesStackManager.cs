@@ -5,15 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sweepstakes1
-{   //Member variables have/has a/an...
-    //Properties
-    //Constructor(s) create mold for...
-    //Methods do something.
+{  
     class SweepstakesStackManager : ISweepstakesManager 
     {
         //Member variables have/has a/an...
         private Stack<Sweepstakes> stack;
-
 
         //Constructor makes mold.
         public SweepstakesStackManager()
@@ -24,7 +20,7 @@ namespace Sweepstakes1
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {//LIFO
             stack.Push(sweepstakes);
-
+            //No need for below. Seek for simplest route. Remember Big O.
 
             //Stack<string> sweepstakeName = new Stack<string>();
             
@@ -39,12 +35,11 @@ namespace Sweepstakes1
             //{
             //    Console.WriteLine(name); 
             //}
-
         }
-
         public Sweepstakes GetSweepstakes()
         {
             return stack.Pop();
+            //Same as above.
             //Stack<string> sweepstakeName = new Stack<string>();
 
             //sweepstakeName.Push("Diamond");
@@ -52,7 +47,6 @@ namespace Sweepstakes1
             //sweepstakeName.Push("Ruby");
             //sweepstakeName.Push("Gold");
             //sweepstakeName.Push("Silver");
-
             
             //Console.WriteLine(sweepstakeName.);
            

@@ -15,7 +15,7 @@ namespace Sweepstakes1
         public int RegistrationNumber;
 
 
-        //Constructor(s) create mold for...
+        //Constructor creates mold for...
         public Contestant(string name)
         {
             this.FirstName = name;

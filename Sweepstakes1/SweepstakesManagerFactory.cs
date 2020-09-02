@@ -13,11 +13,12 @@ namespace Sweepstakes1
         {
             switch (Userinterface.ChooseSweepstakesManager())
             {
-                case "SweepskatesStackManager":
-                    return new SweepskatesStackManager();
-                case "sweepskatesStackManager":
-                    return new SweepskatesQueueManager();
-                
+                case "SweepstakesStackManager":
+                    new SweepstakesStackManager();
+                    return;
+                case "SweepstakesQueueManager":
+                    new SweepstakesQueueManager();
+                    return;
             }
         }
     }
